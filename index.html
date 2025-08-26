@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal portfolio</title>
+</head>
+<body>
+     <main>
+        <aside>
+            <ul class="Links">
+                <li class="activeLink" onclick="Navigate(0)"><i class="fas fa-house-damage"></i><p>Home</p></li>
+                <li onclick="Navigate(1)"><i class="fas fa fa-user" ></i><p>About Us</p></li>
+                <li onclick="Navigate(2)"><i class="fas fa fa-list"></i><p>Services</p></li>
+                <li onclick="Navigate(3)"><i class="fas fa fa-images"></i><p>Gallerys</p></li>
+                <li onclick="Navigate(4)"><i class="fas fa fa-comments"></i><p>Contact US</p></li>
+            </ul>
+        </aside>
+        
+        <!-- Swiper -->
+        <div class="main_wrapper">
+            <div class="swiper mySwiper">
+                <div class="SlideContainer swiper-wrapper">
+                  <div class="swiper-slide home-slider">
+                    <div class="home_content">
+                        <div class="home_text">
+                            <h1 class="head_text1">Hi! I am <span>Vishal Damodar</span></h1>
+                            <h2 class="head_text2">A <span>Java Full Stack Developer</span></h2>
+                            <p>Java Full Stack Developer with hands-on experience in building scalable web applications using Spring Boot, Hibernate, and modern front-end frameworks like Angular and React. Skilled in RESTful APIs, database design,Passionate about clean code, and delivering user-centric solutions.</p>
+                            <div>
+                                <a class="custom_btn" href="#">Hire Me</a>
+                                <a class="custom_btn" href="#">Contact Me</a>
+                            </div>
+                        </div>
+                        <div class="home_img">
+                            <img class="img-fluid" src="img/vishal.jpg">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-slider">
+                    <div class="about_content">
+                        <h1 class="head_text1"><span>About Me</span></h1>
+                        <h2 class="head_text2">I am Vishal Damodar, <span>A Java Full Stack Developer</span></h2>
+                        <p>I’m a passionate and results-driven Java Full Stack Developer with hands-on experience in building scalable web applications and enterprise-grade solutions. My expertise spans across Java (Spring Boot) for backend development and HTML, CSS, JavaScript, Angular for dynamic front-end interfaces. I thrive in agile environments and love transforming complex business requirements into clean, efficient code.</p>
+                        <div class="about_row">
+                            <div class="about_col">
+                                <div class="about_border">
+                                    <p>Experience<span>Fresher</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>Avability:<span>24/7</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>Age<span>00</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>Language Use<span>HTML,CSS,JAVA</span></p>
+                                </div>
+                            </div>
+                            <div class="about_col">
+                                <div class="about_border">
+                                    <p>Country<span>India</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>exam<span>00</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>Phone<span>+91 9579575606</span></p>
+                                </div>
+                                <div class="about_border">
+                                    <p>Degree<span>CSE</span></p>
+                                </div>
+                            </div>
+                            <div class="about_col">
+                                <div class="about_progress_box">
+                                    <div class="progress_item">
+                                        <p>HTML</p>
+                                        <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_item">
+                                        <p>CSS</p>
+                                        <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_item">
+                                        <p>Java</p>
+                                        <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress_item">
+                                        <p>Python</p>
+                                        <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide services">
+                    <div class="service_content">
+                        <h2 class="head_text1"><span>Services</span></h2>
+                        <div class="service_row">
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-server"></i>
+                                    <h3>Backend Development</h3>
+                                    <p>Building robust REST APIs and microservices using Spring Boot, Hibernate, and Java 8+.</p>
+                                </div>
+                            </div>
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Frontend Development</h3>
+                                    <p>Creating responsive web applications with Angular, React, HTML5, CSS3, and JavaScript.</p>
+                                </div>
+                            </div>
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-database"></i>
+                                    <h3>Database Design</h3>
+                                    <p>Designing and optimizing MySQL, PostgreSQL databases with efficient queries and schemas.</p>
+                                </div>
+                            </div>
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-cogs"></i>
+                                    <h3>API Development</h3>
+                                    <p>Creating secure RESTful APIs with authentication, validation, and comprehensive documentation.</p>
+                                </div>
+                            </div>
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h3>Spring Framework</h3>
+                                    <p>Expert in Spring Boot, Spring MVC, Spring Security for enterprise-level application development.</p>
+                                </div>
+                            </div>
+                            <div class="service_col">
+                                <div class="service_item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <h3>Responsive Web Apps</h3>
+                                    <p>Building mobile-friendly, cross-platform web applications with Bootstrap and modern CSS frameworks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide gallery">
+                    <div class="galllery_content">
+                        <h2 class="head_text1"><span>Gallery</span></h2>
+                        <div class="gallery_row">
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                            <div class="gallery_col">
+                                <img class="img-fluid" src="#">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide contactMe">
+                    <div class="contact_content">
+                        <h2 class="head_text1"><span>Contact Me</span></h2>
+                        <form>
+                            <div class="contact_item">
+                                <input class="input_info" type="text" placeholder="Name">
+                            </div>
+                            <div class="contact_item">
+                                <input class="input_info" type="text" placeholder="Name">
+                            </div>
+                            <div class="contact_item_long">
+                                <textarea class="input_info" placeholder="Type here Message"></textarea>
+                                <div class="text-center">
+                                    <button class="custom_btn">Submit</button>
+                                </div>    
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </main>
+</body>
+</html>
