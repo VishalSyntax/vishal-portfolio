@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishal portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
      <main>
@@ -153,7 +158,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide gallery">
-                    <div class="galllery_content">
+                    <div class="gallery_content">
                         <h2 class="head_text1"><span>Gallery</span></h2>
                         <div class="gallery_row">
                             <div class="gallery_col">
@@ -182,13 +187,13 @@
                         <h2 class="head_text1"><span>Contact Me</span></h2>
                         <form>
                             <div class="contact_item">
-                                <input class="input_info" type="text" placeholder="Name">
+                                <input class="input_info" type="text" placeholder="Name" name="name" required>
                             </div>
                             <div class="contact_item">
-                                <input class="input_info" type="text" placeholder="Name">
+                                <input class="input_info" type="email" placeholder="Email" name="email" required>
                             </div>
                             <div class="contact_item_long">
-                                <textarea class="input_info" placeholder="Type here Message"></textarea>
+                                <textarea class="input_info" placeholder="Type here Message" name="message" required></textarea>
                                 <div class="text-center">
                                     <button class="custom_btn">Submit</button>
                                 </div>    
@@ -201,5 +206,37 @@
               </div>
         </div>
     </main>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+        
+        var swiper = new Swiper(".mySwiper", {
+          effect: "cube",
+          allowTouchMove: false,
+          grapCursor: false,
+          cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          },
+          mousewheel: true,
+        });
+
+        swiper.on('slideChange', function () {
+            for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
+            Array.from(document.querySelectorAll(".Links li"))[swiper.activeIndex].classList.add("activeLink")
+        });
+
+        function Navigate(indx) {
+            for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
+            Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink")
+            swiper.slideTo(indx, 1000, true)
+        }
+
+    </script>
+
 </body>
 </html>
