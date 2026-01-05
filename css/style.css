@@ -78,14 +78,23 @@ main aside ul li i {
 }
 
 .main_wrapper .swiper {
-	padding: 30px;
-	height: 100%;
+	padding: 15px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.swiper-slide {
+	height: 100vh;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .home_content {
     display: flex;
     align-items: center;
-    margin-top: 18rem;
+    margin-top: 5rem;
 }
 
 .head_text1 {
@@ -160,7 +169,7 @@ main aside ul li i {
 }
 
 .about_content {
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 .about_row {
@@ -223,6 +232,8 @@ main aside ul li i {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	overflow-y: auto;
+	max-height: calc(100vh - 120px);
 }
 
 .service_col {
@@ -259,7 +270,10 @@ main aside ul li i {
 }
 
 .service_content {
-    margin-top: 7rem;
+    margin-top: 2rem;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 10px;
 }
 
 .gallery_row {
@@ -327,7 +341,7 @@ main aside ul li i {
 }
 
 .contact_content {
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .swiper-cube .swiper-cube-shadow {
