@@ -6,8 +6,12 @@
     <title>Vishal portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/projects.css" rel="stylesheet" type="text/css" />
+    <link href="css/contact-new.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/no-scroll.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -18,7 +22,8 @@
                 <li onclick="Navigate(1)"><i class="fas fa fa-user" ></i><p>About Us</p></li>
                 <li onclick="Navigate(2)"><i class="fas fa fa-list"></i><p>Services</p></li>
                 <li onclick="Navigate(3)"><i class="fas fa fa-images"></i><p>Gallerys</p></li>
-                <li onclick="Navigate(4)"><i class="fas fa fa-comments"></i><p>Contact US</p></li>
+                <li onclick="Navigate(4)"><i class="fas fa-project-diagram"></i><p>Projects</p></li>
+                <li onclick="Navigate(5)"><i class="fas fa fa-comments"></i><p>Contact US</p></li>
             </ul>
         </aside>
         
@@ -56,7 +61,7 @@
                                     <p>Avability:<span>24/7</span></p>
                                 </div>
                                 <div class="about_border">
-                                    <p>Age<span>00</span></p>
+                                    <p>Location<span>Pune, Maharashtra</span></p>
                                 </div>
                                 <div class="about_border">
                                     <p>Language Use<span>HTML,CSS,JAVA</span></p>
@@ -67,7 +72,7 @@
                                     <p>Country<span>India</span></p>
                                 </div>
                                 <div class="about_border">
-                                    <p>exam<span>00</span></p>
+                                    <p>Email<span>thatvishal007@gmail.com</span></p>
                                 </div>
                                 <div class="about_border">
                                     <p>Phone<span>+91 9579575606</span></p>
@@ -97,7 +102,7 @@
                                         </div>
                                     </div>
                                     <div class="progress_item">
-                                        <p>Python</p>
+                                        <p>MySQL</p>
                                         <div class="progress">
                                           <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
@@ -109,96 +114,132 @@
                     </div>
                   </div>
                   <div class="swiper-slide services">
-                    <div class="service_content">
-                        <h2 class="head_text1"><span>Services</span></h2>
-                        <div class="service_row">
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-server"></i>
-                                    <h3>Backend Development</h3>
-                                    <p>Building robust REST APIs and microservices using Spring Boot, Hibernate, and Java 8+.</p>
-                                </div>
-                            </div>
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-code"></i>
-                                    <h3>Frontend Development</h3>
-                                    <p>Creating responsive web applications with Angular, React, HTML5, CSS3, and JavaScript.</p>
-                                </div>
-                            </div>
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-database"></i>
-                                    <h3>Database Design</h3>
-                                    <p>Designing and optimizing MySQL, PostgreSQL databases with efficient queries and schemas.</p>
-                                </div>
-                            </div>
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-cogs"></i>
-                                    <h3>API Development</h3>
-                                    <p>Creating secure RESTful APIs with authentication, validation, and comprehensive documentation.</p>
-                                </div>
-                            </div>
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-layer-group"></i>
-                                    <h3>Spring Framework</h3>
-                                    <p>Expert in Spring Boot, Spring MVC, Spring Security for enterprise-level application development.</p>
-                                </div>
-                            </div>
-                            <div class="service_col">
-                                <div class="service_item">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <h3>Responsive Web Apps</h3>
-                                    <p>Building mobile-friendly, cross-platform web applications with Bootstrap and modern CSS frameworks.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                   </div>
-                  <div class="swiper-slide gallery">
+                  <div class="swiper-slide gallery-slider">
                     <div class="gallery_content">
                         <h2 class="head_text1"><span>Gallery</span></h2>
-                        <div class="gallery_row">
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
+                        <div class="gallery_grid">
+                            <!-- Gallery items will be added here -->
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide projects-slider">
+                    <div class="projects_content">
+                        <h2 class="head_text1"><span>Projects</span></h2>
+                        <div class="projects_row">
+                            <div class="project_col">
+                                <div class="project_item">
+                                    <i class="fas fa-user-circle"></i>
+                                    <h3>Personal Portfolio Website</h3>
+                                    <p>Responsive portfolio website built with HTML5, CSS3, JavaScript, and Swiper.js. Features interactive navigation and modern UI design.</p>
+                                    <div class="project_tech">
+                                        <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>Bootstrap</span>
+                                    </div>
+                                    <a href="https://github.com/vishal-damodar/portfolio" target="_blank" class="project_link">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                    <a href="https://vishalsyntax.github.io/vishal-portfolio/" target="_blank" class="project_link" style="margin-left: 10px; background: #17a2b8;">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
                             </div>
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
+                            <div class="project_col">
+                                <div class="project_item">
+                                    <i class="fas fa-hospital"></i>
+                                    <h3>PollyClinic</h3>
+                                    <p>Hospital Patient Appointment Booking Web App with role-based access for patients, doctors, and admin. Features responsive UI for booking and managing appointments.</p>
+                                    <div class="project_tech">
+                                        <span>Java</span> <span>JSP/Servlets</span> <span>MySQL</span>
+                                    </div>
+                                    <a href="https://github.com/VishalSyntax/polly_clinic" target="_blank" class="project_link">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
                             </div>
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
+                            <div class="project_col">
+                                <div class="project_item">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <h3>Go-Fitness</h3>
+                                    <p>Frontend fitness hub featuring workout plans, health tips, nutrition guides, and progress tracking to help users achieve their fitness goals.</p>
+                                    <div class="project_tech">
+                                        <span>HTML</span> <span>CSS</span> <span>Bootstrap</span> <span>JavaScript</span>
+                                    </div>
+                                    <a href="https://vishalsyntax.github.io/Go-Fitness/" target="_blank" class="project_link">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
                             </div>
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
-                            </div>
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
-                            </div>
-                            <div class="gallery_col">
-                                <img class="img-fluid" src="#">
+                            <div class="project_col">
+                                <div class="project_item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h3>Cloud Data Integrity Auditing</h3>
+                                    <p>Academic final year group project for securely auditing encrypted cloud data with keyword-based searching while maintaining sensitive information privacy.</p>
+                                    <div class="project_tech">
+                                        <span>Java</span> <span>HTML/CSS</span> <span>MySQL</span> <span>JSP/Servlets</span>
+                                    </div>
+                                    <a href="https://github.com/VishalSyntax/cloud-data-integrity-auditing" target="_blank" class="project_link">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                   </div>
-                  <div class="swiper-slide contactMe">
+                  <div class="swiper-slide contact-slider">
                     <div class="contact_content">
-                        <h2 class="head_text1"><span>Contact Me</span></h2>
-                        <form>
-                            <div class="contact_item">
-                                <input class="input_info" type="text" placeholder="Name" name="name" required>
+                        <h2 class="head_text1"><span>Get In Touch</span></h2>
+                        <p class="contact_subtitle">Let's discuss your next project or opportunity</p>
+                        
+                        <div class="contact_wrapper">
+                            <div class="contact_info">
+                                <div class="contact_item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p>thatvishal007@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact_item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p>+91 9579575606</p>
+                                    </div>
+                                </div>
+                                <div class="contact_item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h4>Location</h4>
+                                        <p>Pune, Maharashtra, India</p>
+                                    </div>
+                                </div>
+                                <div class="social_links">
+                                    <a href="https://github.com/VishalSyntax" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://linkedin.com/in/vishal-damodar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="mailto:thatvishal007@gmail.com"><i class="fas fa-envelope"></i></a>
+                                </div>
                             </div>
-                            <div class="contact_item">
-                                <input class="input_info" type="email" placeholder="Email" name="email" required>
+                            
+                            <div class="contact_form">
+                                <form id="contactForm">
+                                    <div class="form_group">
+                                        <input type="text" id="name" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <input type="email" id="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <input type="text" id="subject" placeholder="Subject" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="contact_btn">
+                                        <i class="fas fa-paper-plane"></i> Send Message
+                                    </button>
+                                </form>
                             </div>
-                            <div class="contact_item_long">
-                                <textarea class="input_info" placeholder="Type here Message" name="message" required></textarea>
-                                <div class="text-center">
-                                    <button class="custom_btn">Submit</button>
-                                </div>    
-                            </div>
-                        </form>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -222,7 +263,11 @@
             shadowOffset: 20,
             shadowScale: 0.94,
           },
-          mousewheel: true,
+          mousewheel: {
+            thresholdDelta: 70,
+            sensitivity: 1,
+            forceToAxis: true,
+          },
         });
 
         swiper.on('slideChange', function () {
@@ -235,6 +280,39 @@
             Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink")
             swiper.slideTo(indx, 1000, true)
         }
+
+        // Smart scroll for services and projects
+        let scrollTimeout;
+        
+        function handleSmartScroll(container, isServices) {
+          if (!container) return;
+          
+          container.addEventListener('wheel', function(e) {
+            const isAtTop = container.scrollTop <= 5;
+            const isAtBottom = container.scrollTop + container.clientHeight >= container.scrollHeight - 5;
+            
+            // If scrolling within content, prevent swiper navigation
+            if (!isAtTop && !isAtBottom) {
+              e.stopPropagation();
+              return;
+            }
+            
+            // At boundaries, allow one scroll to pass through to swiper
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+              // Reset any scroll state after delay
+            }, 100);
+          });
+        }
+        
+        // Apply to services and projects only
+        setTimeout(() => {
+          const serviceContent = document.querySelector('.service_content');
+          const projectsContent = document.querySelector('.projects_content');
+          
+          handleSmartScroll(serviceContent, true);
+          handleSmartScroll(projectsContent, false);
+        }, 500);
 
     </script>
 
