@@ -21,7 +21,7 @@
                 <li class="activeLink" onclick="Navigate(0)"><i class="fas fa-house-damage"></i><p>Home</p></li>
                 <li onclick="Navigate(1)"><i class="fas fa fa-user" ></i><p>About Us</p></li>
                 <li onclick="Navigate(2)"><i class="fas fa fa-list"></i><p>Services</p></li>
-                <li onclick="Navigate(3)"><i class="fas fa fa-images"></i><p>Gallerys</p></li>
+                <li onclick="Navigate(3)"><i class="fas fa-certificate"></i><p>Certificates</p></li>
                 <li onclick="Navigate(4)"><i class="fas fa-project-diagram"></i><p>Projects</p></li>
                 <li onclick="Navigate(5)"><i class="fas fa fa-comments"></i><p>Contact US</p></li>
             </ul>
@@ -115,11 +115,61 @@
                   </div>
                   <div class="swiper-slide services">
                   </div>
-                  <div class="swiper-slide gallery-slider">
-                    <div class="gallery_content">
-                        <h2 class="head_text1"><span>Gallery</span></h2>
-                        <div class="gallery_grid">
-                            <!-- Gallery items will be added here -->
+                  <div class="swiper-slide certificates-slider">
+                    <div class="certificates_content">
+                        <h2 class="head_text1"><span>Certificates</span></h2>
+                        <div class="marquee-container">
+                            <div class="marquee-track">
+                                <div class="certificate_card">
+                                    <img src="img/cert/CMD mng.jpg" alt="Command Management Certificate">
+                                    <h3>Command Management</h3>
+                                    <p>Certificate in command line management and system administration fundamentals.</p>
+                                    <a href="img/cert/CMD mng.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/JS crash.jpg" alt="JavaScript Crash Course Certificate">
+                                    <h3>JavaScript Crash Course</h3>
+                                    <p>Comprehensive JavaScript programming course covering ES6+ features and modern development.</p>
+                                    <a href="img/cert/JS crash.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/linux.jpg" alt="Linux Certificate">
+                                    <h3>Linux Fundamentals</h3>
+                                    <p>Linux operating system fundamentals including command line, file systems, and administration.</p>
+                                    <a href="img/cert/linux.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/Screenshot_2026-01-05-14-53-04-664_cn.wps.xiaomi.abroad.lite.png" alt="Learn IT Certificate">
+                                    <h3>Learn IT Certification</h3>
+                                    <p>Professional IT certification covering various technology domains and best practices.</p>
+                                    <a href="img/cert/Screenshot_2026-01-05-14-53-04-664_cn.wps.xiaomi.abroad.lite.png" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <!-- Duplicate for seamless loop -->
+                                <div class="certificate_card">
+                                    <img src="img/cert/CMD mng.jpg" alt="Command Management Certificate">
+                                    <h3>Command Management</h3>
+                                    <p>Certificate in command line management and system administration fundamentals.</p>
+                                    <a href="img/cert/CMD mng.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/JS crash.jpg" alt="JavaScript Crash Course Certificate">
+                                    <h3>JavaScript Crash Course</h3>
+                                    <p>Comprehensive JavaScript programming course covering ES6+ features and modern development.</p>
+                                    <a href="img/cert/JS crash.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/linux.jpg" alt="Linux Certificate">
+                                    <h3>Linux Fundamentals</h3>
+                                    <p>Linux operating system fundamentals including command line, file systems, and administration.</p>
+                                    <a href="img/cert/linux.jpg" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                                <div class="certificate_card">
+                                    <img src="img/cert/Screenshot_2026-01-05-14-53-04-664_cn.wps.xiaomi.abroad.lite.png" alt="Learn IT Certificate">
+                                    <h3>Learn IT Certification</h3>
+                                    <p>Professional IT certification covering various technology domains and best practices.</p>
+                                    <a href="img/cert/Screenshot_2026-01-05-14-53-04-664_cn.wps.xiaomi.abroad.lite.png" target="_blank" class="cert_btn">View Certificate</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                   </div>
@@ -266,7 +316,7 @@
           mousewheel: {
             thresholdDelta: 70,
             sensitivity: 1,
-            forceToAxis: true,
+            forceToAxis: false,
           },
         });
 
