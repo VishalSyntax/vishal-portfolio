@@ -74,7 +74,7 @@ main aside ul li i {
 .main_wrapper {
 	width: calc( 100% - 26rem);
 	overflow: hidden;
-	padding-right: 31rem;
+	padding-right: 0;
 }
 
 .main_wrapper .swiper {
