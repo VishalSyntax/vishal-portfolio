@@ -289,8 +289,9 @@ main aside ul li i {
     overflow: hidden;
     width: 100%;
     position: relative;
-    padding: 20px 0;
+    padding: 40px 0;
     z-index: 1;
+    pointer-events: auto;
 }
 
 .marquee-container:hover .marquee-track {
@@ -302,7 +303,7 @@ main aside ul li i {
     gap: 2rem;
     animation: marquee 30s linear infinite;
     width: calc(200% + 4rem);
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 @keyframes marquee {
@@ -321,15 +322,15 @@ main aside ul li i {
     padding: 2rem;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     z-index: 5;
     pointer-events: auto;
 }
 
 .certificate_card:hover {
-    transform: scale(1.1) !important;
-    z-index: 10;
+    transform: scale(1.15) !important;
+    z-index: 999;
     box-shadow: 0 8px 25px rgba(128, 237, 153, 0.2);
 }
 
@@ -352,6 +353,7 @@ main aside ul li i {
     color: #80ed99;
     margin: 1rem 0;
     font-weight: 600;
+    pointer-events: auto;
 }
 
 .certificate_card p {
@@ -359,6 +361,7 @@ main aside ul li i {
     color: #ffffff;
     margin-bottom: 1.5rem;
     line-height: 1.4;
+    pointer-events: auto;
 }
 
 .cert_btn {
