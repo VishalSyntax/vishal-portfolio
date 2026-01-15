@@ -295,38 +295,8 @@
                   </div>
                   <div class="swiper-slide contact-slider">
                     <div class="contact_content">
-                        <h2 class="head_text1"><span>Get In Touch</span></h2>
-                        <p class="contact_subtitle">Let's discuss your next project or opportunity</p>
+                        <h2 class="head_text1"><span>Contact Us</span></h2>
                         
-                        <div class="contact_info_simple">
-                            <div class="contact_item_simple">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p>thatvishal007@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="contact_item_simple">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p>+91 9579575606</p>
-                                </div>
-                            </div>
-                            <div class="contact_item_simple">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Location</h4>
-                                    <p>Pune, Maharashtra, India</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="social_links_simple">
-                            <a href="https://github.com/VishalSyntax" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/vishal-damodar" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:thatvishal007@gmail.com"><i class="fas fa-envelope"></i></a>
-                        </div>
                     </div>
                   </div>
                 </div>
@@ -396,9 +366,19 @@
         setTimeout(() => {
           const serviceContent = document.querySelector('.service_content');
           const projectsContent = document.querySelector('.projects_content');
+          const contactContent = document.querySelector('.contact_content');
           
           handleSmartScroll(serviceContent, true);
           handleSmartScroll(projectsContent, false);
+          
+          // Allow clicks on contact page links
+          if (contactContent) {
+            contactContent.addEventListener('click', function(e) {
+              if (e.target.tagName === 'A' || e.target.closest('a')) {
+                e.stopPropagation();
+              }
+            });
+          }
         }, 500);
 
     </script>
