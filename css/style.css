@@ -228,12 +228,63 @@ main aside ul li i {
     background-color: #80ed99;
 }
 
-.service_row {
+/* Remove duplicate service_row definition */
+.services_row {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
 
+.contact_content form {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+}
+
+.contact_item .input_info,
+.contact_item_long .input_info {
+	width: 100%;
+	height: 4rem;
+	border-radius: 0.5rem;
+	padding-left: 1rem;
+	color: #ffffff;
+	background: #212529;
+	border: transparent;
+}
+
+.contact_item .input_info::placeholder {
+	color: #ffffff;
+}
+
+.contact_item {
+    width: 48%;
+    margin: 1rem;
+}
+
+.contact_item_long {
+	width: 100%;
+	margin: 1rem;
+}
+
+.contact_item_long .input_info {
+	height: 20rem !important;
+	padding: 1.5rem;
+}
+
+.contact_item_long .custom_btn {
+	border: transparent;
+	margin-top: 2rem;
+}
+
+.contact_content {
+    margin-top: 2rem;
+}
+
+.swiper-cube .swiper-cube-shadow {
+	display: none;
+}
+/* Service Styles */
 .service_col {
 	width: 33.33333%;
 	padding: 1rem;
@@ -290,65 +341,9 @@ main aside ul li i {
     margin-bottom: 2rem;
 }
 
-.services_row {
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
-}
-
 .service_content {
     margin-top: 2rem;
     overflow-y: auto;
     height: 100vh;
     padding: 10px;
-}
-
-.contact_content form {
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	margin-top: 3rem;
-}
-
-.contact_item .input_info,
-.contact_item_long .input_info {
-	width: 100%;
-	height: 4rem;
-	border-radius: 0.5rem;
-	padding-left: 1rem;
-	color: #ffffff;
-	background: #212529;
-	border: transparent;
-}
-
-.contact_item .input_info::placeholder {
-	color: #ffffff;
-}
-
-.contact_item {
-    width: 48%;
-    margin: 1rem;
-}
-
-.contact_item_long {
-	width: 100%;
-	margin: 1rem;
-}
-
-.contact_item_long .input_info {
-	height: 20rem !important;
-	padding: 1.5rem;
-}
-
-.contact_item_long .custom_btn {
-	border: transparent;
-	margin-top: 2rem;
-}
-
-.contact_content {
-    margin-top: 2rem;
-}
-
-.swiper-cube .swiper-cube-shadow {
-	display: none;
 }
