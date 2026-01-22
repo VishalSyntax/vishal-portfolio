@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    pointer-events: auto;
 }
 
 .marquee-container {
@@ -64,18 +65,19 @@
     margin-bottom: 1rem;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
+    pointer-events: none;
 }
 
 .certificate_card:hover img {
     border-color: #80ed99;
 }
 
+/* Remove conflicting pointer-events from certificate elements */
 .certificate_card h3 {
     font-size: 1.4rem;
     color: #80ed99;
     margin: 1rem 0;
     font-weight: 600;
-    pointer-events: auto;
 }
 
 .certificate_card p {
@@ -83,13 +85,12 @@
     color: #ffffff;
     margin-bottom: 1.5rem;
     line-height: 1.4;
-    pointer-events: auto;
 }
 
 .cert_btn {
     display: inline-block;
     background: #80ed99;
-    color: #000;
+    color: #000 !important;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
@@ -97,15 +98,24 @@
     transition: all 0.3s ease;
     font-size: 0.9rem;
     position: relative;
-    z-index: 999;
-    pointer-events: all;
+    z-index: 9999;
+    pointer-events: auto;
     cursor: pointer;
 }
 
 .cert_btn:hover {
-    background: #2bb74b;
-    color: #ffffff;
+    background: #2bb74b !important;
+    color: #ffffff !important;
     text-decoration: none;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(128, 237, 153, 0.3);
+}
+.certificates-page {
+    height: 100vh;
+    width: calc(100% - 260px);
+    position: absolute;
+    top: 0;
+    left: 260px;
+    z-index: 10;
+    background: #343A40;
 }
