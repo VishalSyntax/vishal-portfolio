@@ -58,70 +58,19 @@
     }
 }
 
+/* Fix responsive conflicts */
 @media (max-width: 768px) {
-    html {
-        font-size: 52%;
-    }
-    
-    main {
-        flex-direction: column;
-    }
-    
-    main aside {
+    .certificates-page {
         width: 100%;
-        height: auto;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 1rem 0;
-    }
-    
-    main aside ul {
-        display: flex;
-        padding: 0 1rem;
-        gap: 1rem;
-    }
-    
-    main aside ul li {
-        padding-bottom: 0;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    main aside ul li p {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-    
-    main aside ul li i {
-        margin-right: 0;
-        font-size: 2rem;
-    }
-    
-    .main_wrapper {
-        width: 100%;
-        padding-right: 0;
-    }
-    
-    .home_content {
-        margin-top: 5rem;
-    }
-    
-    .head_text1 {
-        font-size: 3rem;
-    }
-    
-    .head_text2 {
-        font-size: 2rem;
+        left: 0;
     }
     
     .service_col {
         width: 100%;
     }
     
-    .about_content,
-    .service_content,
-    .contact_content {
-        margin-top: 5rem;
+    .project_col {
+        width: 50%;
     }
 }
 
@@ -201,5 +150,67 @@ p {
         top: 100%;
         white-space: nowrap;
         z-index: 1000;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 52%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    main aside {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+    
+    main aside ul {
+        display: flex;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
+    main aside ul li {
+        padding-bottom: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    main aside ul li p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    main aside ul li i {
+        margin-right: 0;
+        font-size: 2rem;
+    }
+    
+    .main_wrapper {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .home_content {
+        margin-top: 5rem;
+    }
+    
+    .head_text1 {
+        font-size: 3rem;
+    }
+    
+    .head_text2 {
+        font-size: 2rem;
+    }
+    
+    .about_content,
+    .service_content,
+    .contact_content {
+        margin-top: 5rem;
     }
 }
