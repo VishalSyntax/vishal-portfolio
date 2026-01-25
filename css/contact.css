@@ -1,62 +1,64 @@
 .contact_content {
-    padding: 2rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 2rem;
 }
 
 .contact_row {
     display: flex;
-    gap: 3rem;
-    margin-top: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3rem;
 }
 
 .contact_info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    width: 50%;
+    padding-right: 2rem;
 }
 
 .contact_item {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-    border-radius: 0.8rem;
     text-align: center;
-    transition: transform 0.3s ease;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.437);
+    border-radius: 0.4rem;
+    transition: .3s;
+    margin-bottom: 2rem;
 }
 
 .contact_item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.1);
 }
 
 .contact_item i {
-    font-size: 2rem;
+    font-size: 3.4rem;
     color: #80ed99;
     margin-bottom: 1rem;
 }
 
 .contact_item h3 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: 700;
     color: #80ed99;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
 }
 
 .contact_item p {
+    font-size: 1.3rem;
     color: #ffffff;
     margin: 0;
 }
 
 .contact_form {
-    flex: 1;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 2rem;
-    border-radius: 0.8rem;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.contact_form_container {
+    background: rgba(0, 0, 0, 0.437);
+    padding: 2.5rem;
+    border-radius: 0.4rem;
 }
 
 .form_group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .form_group input,
@@ -64,11 +66,16 @@
     width: 100%;
     padding: 1rem;
     border: 2px solid transparent;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: border-color 0.3s ease;
+}
+
+.form_group textarea {
+    resize: none;
+    height: 120px;
 }
 
 .form_group input:focus,
@@ -83,22 +90,36 @@
 }
 
 .custom_btn {
-    background: #80ed99;
-    color: #000;
-    padding: 1rem 2rem;
-    border: none;
+    height: 4.5rem;
     border-radius: 0.5rem;
+    padding: 0.4rem 2rem;
+    background: #37a550;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    border: none;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
-    display: inline-block;
 }
 
 .custom_btn:hover {
     background: #2bb74b;
     color: #ffffff;
-    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contact_info,
+    .contact_form {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .contact_form {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
