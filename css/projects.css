@@ -57,18 +57,22 @@
 
 .project_link {
     display: inline-block;
-    background: #28a745;
-    color: white;
+    background: #80ed99;
+    color: #000;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 5px;
 }
 
 .project_link:hover {
-    background: #218838;
-    color: white;
+    background: #37a550;
+    color: #ffffff;
     text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(128, 237, 153, 0.3);
 }
 
 .project_link i {

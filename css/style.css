@@ -85,10 +85,22 @@ main aside ul li i {
 
 .swiper-slide {
 	height: 100vh;
-	overflow-y: auto;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	pointer-events: auto;
+}
+
+.projects-slider,
+.contact-slider {
+	overflow: visible;
+	pointer-events: auto;
+}
+
+.projects-slider *,
+.contact-slider * {
+	pointer-events: auto;
 }
 
 .home_content {
