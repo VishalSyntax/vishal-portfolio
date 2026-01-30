@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishal Damodar — Java Full Stack Developer</title>
-    <meta name="description" content="Vishal Damodar — Java Full Stack Developer specializing in RESTful APIs, Java backend development, and modern front-end frameworks. Open to backend/full-stack opportunities.">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Vishal Damodar — Java Full Stack Developer, Java backend development, and modern front-end frameworks. Open to backend/full-stack opportunities.">
     <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/projects.css" rel="stylesheet" type="text/css" />
-    <link href="css/certificates.css" rel="stylesheet" type="text/css" />
-    <link href="css/contact.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
-     <main>
+    <main>
         <aside>
             <ul class="Links">
                 <li class="activeLink" onclick="Navigate(0)"><i class="fas fa-house-damage"></i><p>Home</p></li>
@@ -295,44 +289,48 @@
                   </div>
                   <div class="swiper-slide contact-slider">
                     <div class="contact_content">
-                        <h2 class="head_text1"><span>Contact Me</span></h2>
-                        <div class="contact_row">
-                            <div class="contact_info">
+                        <h2 class="head_text1">Get In Touch</h2>
+                        <p class="contact_subtitle">Let's discuss your next project or opportunity</p>
+                        <div class="contact_container">
+                            <div class="contact_info_card">
                                 <div class="contact_item">
                                     <i class="fas fa-envelope"></i>
-                                    <h3>Email</h3>
-                                    <p>thatvishal007@gmail.com</p>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p>thatvishal007@gmail.com</p>
+                                    </div>
                                 </div>
                                 <div class="contact_item">
                                     <i class="fas fa-phone"></i>
-                                    <h3>Phone</h3>
-                                    <p>+91 9579575606</p>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p>+91 9579575606</p>
+                                    </div>
                                 </div>
                                 <div class="contact_item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <h3>Location</h3>
-                                    <p>Pune, Maharashtra, India</p>
+                                    <div>
+                                        <h4>Location</h4>
+                                        <p>Pune, Maharashtra, India</p>
+                                    </div>
+                                </div>
+                                <div class="social_icons">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
                                 </div>
                             </div>
-                            <div class="contact_form">
-                                <div class="contact_form_container">
-                                    <form id="contactForm">
-                                        <div class="form_group">
-                                            <input type="text" name="name" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="form_group">
-                                            <input type="email" name="email" placeholder="Your Email" required>
-                                        </div>
-                                        <div class="form_group">
-                                            <input type="text" name="subject" placeholder="Subject" required>
-                                        </div>
-                                        <div class="form_group">
-                                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                                        </div>
-                                        <button type="submit" class="custom_btn">Send Message</button>
-                                    </form>
+                            <form id="contactForm" class="contact_form">
+                                <div class="form_row">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <input type="text" name="subject" placeholder="Subject" required>
                                 </div>
-                            </div>
+                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <button type="submit" class="send_btn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
                         </div>
                     </div>
                   </div>
