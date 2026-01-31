@@ -112,6 +112,7 @@ main aside ul li i {
 .head_text1 {
 	font-size: 4rem;
 	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
 .head_text1 span {
@@ -122,6 +123,7 @@ main aside ul li i {
 	font-size: 3rem;
 	font-weight: 600;
 	padding-bottom: 2rem;
+	margin-top: 0;
 }
 
 .head_text2 span {
@@ -576,15 +578,16 @@ main aside ul li i {
 .contact_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .contact_info_card {
     background: rgba(40, 40, 40, 0.9);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -594,7 +597,7 @@ main aside ul li i {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -603,7 +606,7 @@ main aside ul li i {
 }
 
 .contact_item i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #80ed99;
     width: 40px;
     text-align: center;
@@ -611,14 +614,14 @@ main aside ul li i {
 
 .contact_item div h4 {
     color: #ffffff;
-    font-size: 1rem;
-    margin: 0 0 0.3rem 0;
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
     font-weight: 600;
 }
 
 .contact_item div p {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
