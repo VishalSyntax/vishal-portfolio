@@ -560,13 +560,15 @@ main aside ul li i {
 
 /* ===== CONTACT SECTION ===== */
 .contact_content {
-    padding: 2rem;
+    padding: 6rem;
     text-align: center;
 }
 
 .contact_content .head_text1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    color: #80ed99;
+    margin-bottom: 2rem;
+    margin-left: 0%;
 }
 
 .contact_subtitle {
@@ -585,7 +587,7 @@ main aside ul li i {
 }
 
 .contact_info_card {
-    background: rgba(40, 40, 40, 0.9);
+    background: #212529;
     border-radius: 15px;
     padding: 1.5rem;
     height: 400px;
@@ -597,12 +599,14 @@ main aside ul li i {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    background: #34373a;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .contact_item:last-of-type {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .contact_item i {
@@ -631,7 +635,7 @@ main aside ul li i {
     gap: 1rem;
     margin-top: auto;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #80ed99;
 }
 
 .social_icons a {
@@ -653,7 +657,7 @@ main aside ul li i {
 }
 
 .contact_form {
-    background: rgba(40, 40, 40, 0.9);
+    background: #212529;
     border-radius: 15px;
     padding: 2rem;
     height: 400px;
@@ -664,8 +668,9 @@ main aside ul li i {
 .form_row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    background: #34373a;
+    gap: 1.8rem;
+    margin-bottom: 3.5rem;
 }
 
 .contact_form input,
