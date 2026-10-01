@@ -1,4 +1,4 @@
-# Vishal Damodar — DevOps & Cloud Engineer Portfolio
+# DevOps & Cloud Engineer Portfolio
 
 🌐 **Live Demo:** [https://vishalsyntax.github.io/vishal-portfolio/](https://vishalsyntax.github.io/vishal-portfolio/)
 
@@ -11,7 +11,7 @@ A professional portfolio website showcasing DevOps and Cloud Engineering skills,
 - **Name:** Vishal Damodar
 - **Role:** DevOps & Cloud Engineer
 - **Email:** thatvishal007@gmail.com
-- **Phone:** +91 9579575606
+- **Phone:** +91 957957****
 - **Location:** Pune, Maharashtra, India
 - **GitHub:** [VishalSyntax](https://github.com/VishalSyntax)
 - **LinkedIn:** [vishal0x](https://linkedin.com/in/vishal0x)
